@@ -22,5 +22,5 @@ var questions =
 
 document.addEventListener("DOMContentLoaded", function(event) { 
     //your code to run since DOM is loaded and ready
-    window.alert("hey")
+    //window.alert("hey")
 });
