@@ -117,34 +117,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
+                        
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>Be Part
@@ -180,7 +153,7 @@
                     <div class="portfolio-caption">
                         <h4>Fundamentals Of Software Engeneering</h4><br/>
 
-                    <button class="btn btn-success">view more</button>
+                    <button class="btn btn-success" data-target="#modalForFundOfSoftware" data-toggle="modal">Take Short Quiz</button>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -195,7 +168,7 @@
                     <div class="portfolio-caption">
                         <h4>Programming 1</h4><br/>
 
-                    <button class="btn btn-success">view more</button>
+                    <button class="btn btn-success" data-target="#modalForProgramming1" data-toggle="modal">Take Short Quiz</button>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -210,8 +183,7 @@
                     <div class="portfolio-caption">
                         <h4>Introduction to Networking and
                             Mathematics for Computing.</h4><br/>
-
-                        <button class="btn btn-success">view more</button>
+                        <button class="btn btn-success" data-target="#modalForIntroToNetworking" data-toggle="modal">Take Short Quiz</button>
                     </div>
                 </div>
                 </div>
@@ -237,7 +209,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
                         <h4>Micheal Badu</h4>
                         <p class="text-muted">Lead Developer</p>
                         <ul class="list-inline social-buttons">
@@ -336,9 +308,9 @@
         </div>
     </footer>
 
-    <!-- Courses Modals -->
 
 
+    <!-- Fundermentals Of Software Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -356,15 +328,22 @@
                                 <h2>Fundamentals Of Software Engeneering</h2>
                                 <p class="item-intro text-muted">This course is about....</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/fundofsoftwareeng.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                <p>This module is an engineering branch related with growth of software product using well-defined
+                                scientific principles, methods and procedures. The outcome of software engineering is an efficient
+                                and reliable software product.
+                                Software project management has wider scope than software engineering process as it involves
+                                communication, pre and post-delivery support.
+                                The module Fundamentals of Software Engineering requires a good deal of reading. This reading will
+                                help you to build up an understanding that there is a lot more to software development than writing
+                                code!</p>
+                                
                                 <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
+                                    <li>Topic 1: Introduction to software engineering.</li>
+                                    <li>Topic 2: Software Engineering Processes.</li>
+                                    <li>Topic 3: Agile software development.</li>
+                                    <li> Topic 4: Requirement Engineering.</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
                     </div>
@@ -373,7 +352,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
+    <!-- Programming 1 Modal-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -390,9 +369,19 @@
                                 <h2>Programming 1</h2>
                                 <p class="item-intro text-muted">Programming 1...</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/programming.jpg" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <p>This course teaches fundamental concepts and terminology of computer programming. Students will
+                                develop skills in designing and writing simple computer programs. The course requires no
+                                programming background.
+                                <ul>
+                                    <li>Topic 1: Introduction to Object Oriented Programming</li>
+                                    <li>Topic 2: Writing Java Code</li>
+                                    <li>Topic 3: Defining Classes</li>
+                                    <li>Topic 4: Adding Methods to classes</li>
+                                </ul>
+                                
+                                </p>
+                                
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -401,7 +390,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
+    <!-- Introduction to Networking and Mathematics for Computing -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -419,8 +408,63 @@
                                 <h2>Introduction to Networking and Mathematics for Computing</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/networking.jpg" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <p>Networks are everywhere—or so it seems. You can hardly do anything with data that does not
+                                involve a network. Like the human networks that we are all part of, computer networks let us share
+                                information and resources. In business, the reliance on networks is even more pervasive than in
+                                homes or schools. Networks help individuals and businesses alike save money <br />
+
+                                Topic 1: CCNA Routing and Switching<br />
+                                Topic 2: Cybersecurity essentials<br />
+                                Topic 3: Packet Tracer Know how<br />
+                                Topic 4: Introduction to Cybersecurity<br />
+                            </p> <br /> <br />
+                            <p>
+                                <h3>Mathematics for Computing</h3>
+                                Welcome to the Mathematics for Computing module which I do hope you will enjoy.  During the
+                                trimester you will learn new and useful methods in discrete mathematics which will stand you in
+                                good stead during the rest of your studies and your future career.The term ‘discrete mathematics’
+                                encompasses a collection of topics that form the prerequisite mathematical knowledge
+                                underpinning the study of both hardware and software systems. <br />
+
+                                Topic 1: Logic 1<br />
+                                Topic 2: Logic 2<br />
+                                Topic 3: Vectors<br />
+                                Topic 4: Matrices<br />
+                            </p>    
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Introduction to Networking and Mathematics for Computing Quiz modal -->
+    <div class="portfolio-modal modal fade" id="modalForIntroToNetworking" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Quiz Details Go Here -->
+                                <h4>Choose the correct answer for the following questions</h4>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <form>
+                                  What color do you prefer?<br>
+                                  <input type="radio" name="colors" id="red">Red<br>
+                                  <input type="radio" name="colors" id="blue">Blue
+                                 </form>
+                               
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -429,6 +473,195 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Introduction to Networking and Mathematics for Computing Quiz modal -->
+    <div class="portfolio-modal modal fade" id="modalForFundOfSoftware" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Quiz Details Go Here -->
+
+                                <h4>Topic 1 : CCNA Routing and Switch</h4>
+                                <p class="item-intro text-muted">Funder Mentals Of Software Engenieering</p>
+                                <form>
+                                  Which two Internet solutions provide an always-on, high-bandwidth connection
+                                  to computers on a LAN? (Choose two.)<br>
+                                  <input type="radio" name="colors" id="red">cellular<br>
+                                  <input type="radio" name="colors" id="blue">dsl<br />
+                                  <input type="radio" name="colors" id="blue">satellite<br />
+                                  <input type="radio" name="colors" id="blue">cable<br />
+                                </form>
+                                <form>
+                                  What type of network must a home user access in order to do online shopping?<br>
+                                  <input type="radio" name="colors" id="red">a local area network<br>
+                                  <input type="radio" name="colors" id="blue">the internet<br />
+                                  <input type="radio" name="colors" id="blue">an extranet<br />
+                                  <input type="radio" name="colors" id="blue">an internet<br />
+                                </form>
+                                <form>
+                                  What are two functions of intermediary devices on a network? (Choose two.)<br>
+                                  <input type="radio" name="colors" id="red">They are the primary source and providers of information and services to end devices.<br>
+                                  <input type="radio" name="colors" id="blue">They form the interface between the human network and the underlying communication
+                                  network.<br />
+                                  <input type="radio" name="colors" id="blue">They direct data along alternate pathways when there is a link failure.<br />
+                                  <input type="radio" name="colors" id="blue">They run applications that support collaboration for business.<br />
+                                </form>
+
+                                <form>
+                                  Which description correctly defines a converged network?<br>
+                                  <input type="radio" name="colors" id="red">a network that allows users to interact directly with each other over multiple channels<br>
+                                  <input type="radio" name="colors" id="blue">a network that is limited to exchanging character-based information.<br />
+                                  <input type="radio" name="colors" id="blue">a dedicated network with separate channels for video and voice services<br />
+                                  <input type="radio" name="colors" id="blue">a single network channel capable of delivering multiple communication forms <br />
+                                </form>
+
+                                <form>
+                                  Which statement describes a characteristic of cloud computing?<br>
+                                  <input type="radio" name="colors" id="red">A business can connect directly to the Internet without the use of an ISP.<br>
+                                  <input type="radio" name="colors" id="blue">Devices can connect to the Internet through existing electrical wiring.<br />
+                                  <input type="radio" name="colors" id="blue">Investment in new infrastructure is required in order to access the cloud<br />
+                                  <input type="radio" name="colors" id="blue">Applications can be accessed over the Internet through a subscription<br />
+                                </form>
+
+                                <form>
+                                   Which two Internet connection options do not require that physical cables be run to the building? (Choose two.)<br>
+                                  <input type="radio" name="colors" id="red">cellular<br>
+                                  <input type="radio" name="colors" id="blue">dialup<br />
+                                  <input type="radio" name="colors" id="blue">satellite<br />
+                                  <input type="radio" name="colors" id="blue">DSL<br />
+                                  <input type="radio" name="colors" id="blue">dedicated leased line<br />
+                                </form><br />
+
+                                <h4>Cybersecurity essentials</h4>
+                                <form>
+                                   What encryption algorithm uses the same pre-shared key to encrypt and decrypt data? symmetric<br>
+                                  <input type="radio" name="colors" id="red">one-time pad<br>
+                                  <input type="radio" name="colors" id="blue">hash<br />
+                                  <input type="radio" name="colors" id="blue">asymmetric<br />
+                                  
+                                </form><br />
+
+                                <form>
+                                   Which asymmetric algorithm provides an electronic key exchange method to share the secret key?<br>
+                                  <input type="radio" name="colors" id="red">one-time pad<br>
+                                  <input type="radio" name="colors" id="blue">hash<br />
+                                  <input type="radio" name="colors" id="blue">asymmetric<br />
+                                  
+                                </form><br />
+
+                                <form>
+                                   What encryption algorithm uses the same pre-shared key to encrypt and decrypt data? symmetric<br>
+                                  <input type="radio" name="colors" id="red">hashing<br>
+                                  <input type="radio" name="colors" id="blue">RSA<br />
+                                  <input type="radio" name="colors" id="blue">DES<br />
+                                  <input type="radio" name="colors" id="blue">Diffie-Hellman<br />
+                                  
+                                </form><br />
+
+                                 <form>
+                                    Diffie-Hellman provides an electronic exchange method to share a secret key and is used by multiple secure protocols.Which three protocols use asymmetric key algorithms? (Choose three.)<br>
+                                  <input type="radio" name="colors" id="red">Secure Shell (SSH)<br>
+                                  <input type="radio" name="colors" id="blue">Advanced Encryption Standard (AES)<br />
+                                  <input type="radio" name="colors" id="blue">Pretty Good Privacy (PGP)<br />
+                                  <input type="radio" name="colors" id="blue">Secure Sockets Layer (SSL)<br />
+                                  
+                                </form><br />
+
+
+                                <form>
+                                    Which two terms are used to describe cipher keys? (Choose two.)<br>
+                                  <input type="radio" name="colors" id="red">key space<br>
+                                  <input type="radio" name="colors" id="blue">keylogging<br />
+                                  <input type="radio" name="colors" id="blue">key randomness<br />
+                                  <input type="radio" name="colors" id="blue">key length<br />
+                                  
+                                </form><br />
+
+                                <div>
+                                     A warning banner that lists the negative outcomes of breaking company policy is displayed each time a computer user logs in to the machine. What type of access control is implemented?<br>
+                                  <input type="radio" name="colors" id="red">preventive<br>
+                                  <input type="radio" name="colors" id="blue">masking<br />
+                                  <input type="radio" name="colors" id="blue">detective<br />
+                                  <input type="radio" name="colors" id="blue">deterrent<br />
+                                  
+                                </div><br />
+
+                                <form>
+                                     What term is used to describe concealing data in another file such as a graphic, audio, or other text file?<br>
+                                  <input type="radio" name="colors" id="red">steganography<br>
+                                  <input type="radio" name="colors" id="blue">hiding<br />
+                                  <input type="radio" name="colors" id="blue">masking<br />
+                                  <input type="radio" name="colors" id="blue">obfuscation<br />
+                                  
+                                </form><br />
+
+                               
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Introduction to Networking and Mathematics for Computing Quiz modal -->
+    <div class="portfolio-modal modal fade" id="modalForProgramming1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Quiz Details Go Here -->
+                                <h4>Choose the correct answer for the following questions</h4>
+                                <p class="item-intro text-muted">Programming 1</p>
+                                <form>
+                                  What color do you prefer?<br>
+                                  <input type="radio" name="colors" id="red">Red<br>
+                                  <input type="radio" name="colors" id="blue">Blue<br />
+
+                                  What color do you prefer?<br>
+                                  <input type="radio" name="colors" id="red">Red<br>
+                                  <input type="radio" name="colors" id="blue">Blue<br />
+                                  What color do you prefer?<br>
+                                  <input type="radio" name="colors" id="red">Red<br>
+                                  <input type="radio" name="colors" id="blue">Blue<br />
+
+                                  What color do you prefer?<br>
+                                  <input type="radio" name="colors" id="red">Red<br>
+                                  <input type="radio" name="colors" id="blue">Blue<br />
+                                </form>
+                               
+                                <br /><br />
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Quit quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
