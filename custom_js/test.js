@@ -101,15 +101,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
     }
 
-        //console.log(getChosenAnswer("quesSeven"));
+
     })
 
-
-
-
-
-    // List query selctor with the ids and log the results on click for test
-    // var quesOne = document.querySelector('input[name=quesOne]:checked').value;
-    // console.log(quesOne);
 
 });
