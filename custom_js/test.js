@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var questionDiv                 =  document.getElementById('questions');
     var answersDiv                  =  document.getElementById('answers');
     var scores                      =  0;
-    // array of correct answers 
+    // array of correct answers
     var answersArray                =  [0, 1, 2, 0, 1, 3, 1, 0, 1, 0, 2, 2, 1];
 
 
@@ -42,57 +42,58 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var quesThirteen = getChosenAnswer("quesThirteen");
 
       // check if all questions have been tackled
-      if (
-          quesOne         !== false
-          && quesTwo      !== false
-          && quesThree    !== false
-          && quesFour     !== false
-          && quesFive     !== false
-          && quesSix      !== false
-          && quesSeven    !== false
-          && quesEight    !== false
-          && quesNine     !== false
-          && quesTen      !== false
-          && quesEleven   !== false
-          && quesTwelve   !== false
-          && quesThirteen !== false
-         )
-      {
-        window.alert("hey")
-        // push answers to array
+      if(confirm("Are You Sure You Want To Submit These Answers? ")){
+          if (
+              quesOne         !== false
+              && quesTwo      !== false
+              && quesThree    !== false
+              && quesFour     !== false
+              && quesFive     !== false
+              && quesSix      !== false
+              && quesSeven    !== false
+              && quesEight    !== false
+              && quesNine     !== false
+              && quesTen      !== false
+              && quesEleven   !== false
+              && quesTwelve   !== false
+              && quesThirteen !== false
+             )
+          {
+            //window.alert("hey")
+            // push answers to array
 
-        chosenAnswersArray.push(quesOne, quesTwo,
-                                quesThree, quesFour,
-                                quesFive, quesSix,
-                                quesSeven, quesEight,
-                                quesNine, quesTen,
-                                quesEleven, quesTwelve,
-                                quesThirteen);
-        console.log(chosenAnswersArray);
+            chosenAnswersArray.push(quesOne, quesTwo,
+                                    quesThree, quesFour,
+                                    quesFive, quesSix,
+                                    quesSeven, quesEight,
+                                    quesNine, quesTen,
+                                    quesEleven, quesTwelve,
+                                    quesThirteen);
+            console.log(chosenAnswersArray);
 
-        // Marking logic
+            // Marking logic
 
-        // compare both arrays and introduce a total score
-        score = 0;
+            // compare both arrays and introduce a total score
+            score = 0;
 
-        for(var i = 0; i < answersArray.length; i++){
-          // check the values at each position
-          if (answersArray[i] == chosenAnswersArray[i]){
-            score += 1;
+            for(var i = 0; i < answersArray.length; i++){
+              // check the values at each position
+              if (answersArray[i] == chosenAnswersArray[i]){
+                score += 1;
+              }
+
+            }
+
+            // release scores
+            questionDiv.style.display = "none";
+            this.style.display     = "none";
+            answersDiv.innerHTML      = "<h1> You scored " + score +" / 13 </h1><br /><button class= 'btn btn-primary'>View Answers</button>"
+
+
+          } else {
+            window.alert("attempt all question")
           }
-
-        }
-
-
-        // release scores
-        questionDiv.style.display = "none";
-        this.style.display     = "none";
-        answersDiv.innerHTML      = "<h1> You scored " + score +" / 13 </h1><br /><button class= 'btn btn-primary'>View Answers</button>"
-
-
-      } else {
-        window.alert("attempt all question")
-      }
+    }
 
         //console.log(getChosenAnswer("quesSeven"));
     })
