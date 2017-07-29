@@ -86,10 +86,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             // release scores
             questionDiv.style.display = "none";
-            this.style.display     = "none";
-            answersDiv.innerHTML      = "<h1> You scored " + score +" / 13 </h1><br /><button class= 'btn btn-primary'>View Answers</button>"
+            this.style.display        = "none";
+            answersDiv.innerHTML      = "<h1> You scored " + score +" / 13 </h1><br /><button class= 'btn btn-primary' id = 'see-answers'>View Answers</button>"
 
+            // see answers button configuration
 
+            seeAnswers = document.getElementById("see-answers");
+            seeAnswers.addEventListener("click", function(){
+             this.style.display = "none";
+             questionDiv.style.display = "inline";
+            })
           } else {
             window.alert("attempt all question")
           }
